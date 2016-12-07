@@ -12,7 +12,7 @@
 (setq-default tab-width 4)
 
 ;; Newline at end of file
-(setq require-final-newline t)
+;; (setq require-final-newline t)
 
 ;; delete the selection with a keypress
 (delete-selection-mode t)
@@ -71,25 +71,32 @@
 (put 'upcase-region 'disabled nil) ;; <C-x C-u>
 (put 'downcase-region 'disabled nil) ;; <C-x C-l>
 
+;; frame setting
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
 ;; mode line settings
 (line-number-mode t)
 (column-number-mode t)
 (size-indication-mode t)
 
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
+;;;; do not display the load average
+(setq display-time-default-load-average nil)
+;; (setq display-time-format ":%r ")
+(display-time-mode t)
+
+;; show the battery status in mode line
+;; (display-battery-mode t)
 
 ;; (which-function-mode 1)
 
 (global-set-key (kbd "RET") 'newline-and-indent)
-(global-set-key (kbd "C-x f") 'find-file-at-point)
-(global-set-key (kbd "C-c C-z") 'zone)
-
-(global-unset-key (kbd "C-z"))
-(global-unset-key (kbd "C-x C-c"))
 
 ;; (transient-mark-mode t)
+
+;; be quite
+(global-eldoc-mode -1)
 
 (prefer-coding-system 'utf-8)
 (set-default-coding-systems 'utf-8)

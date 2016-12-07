@@ -1,26 +1,18 @@
 (use-package ivy
   :ensure t
-  :diminish ivy-mode
   :config
   (setq ivy-re-builders-alist
-      '((t . ivy--regex-plus)))
+        '((t . ivy--regex-plus)))
+
+  ;; show recent file in <C-x b> for quick open recent file
   (setq ivy-use-virtual-buffers t)
+
   (setq confirm-nonexistent-file-or-buffer t)
 
-  ;; Face
-  ;; (set-face-attribute 'ivy-current-match nil
-  ;;                     :foreground "#DFAF8F")
+  ;; toggle ivy at all buffer
+  (ivy-mode 1)
 
-  ;; (set-face-attribute 'ivy-virtual nil
-  ;;                     :foreground "#269BD3")
-
-  (ivy-mode 1))
-
-(use-package counsel
-  :ensure t
-  :bind (("M-x" . counsel-M-x)
-         ("C-x C-f" . counsel-find-file)
-         ("C-s" . swiper)))
-         ;; ("C-c g" . counsel-git)))
+  ;; suppress 'ivy-mode' string to show in mode-line
+  :diminish ivy-mode)
 
 (provide 'init-ivy)

@@ -3,8 +3,9 @@
   :ensure t
   :config
   (setq sml/no-confirm-load-theme t)
+  ;; (setq sml/theme 'dark)
   (sml/setup)
-  ;; (add-to-list 'sml/replacer-regexp-list '("^~/Git-Projects/" ":Git:") t)
+  ;(add-to-list 'sml/replacer-regexp-list '("^~/Git-Projects/" ":Git:") t)
   )
 
 (provide 'init-smart-line)

@@ -15,4 +15,9 @@
   ;; enable some really cool extensions like C-x C-j(dired-jump)
   (require 'dired-x))
 
+;; (use-package all-the-icons-dired
+;;   :ensure t
+;;   :init
+;;   (add-hook 'dired-mode-hook 'all-the-icons-dired-mode))
+
 (provide 'init-dired)

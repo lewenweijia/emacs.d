@@ -1,10 +1,16 @@
-(load-theme 'light-blue t)
+;; (load-theme 'light-blue t)
+;; (load-theme 'deeper-blue t)
 ;; (load-theme 'dichromacy t) ;; hi-line overlays hightlight-phrase
 
-;; (use-package zenburn-theme
+;; (use-package dracula-theme
 ;;   :ensure t
 ;;   :config
-;;   (load-theme 'zenburn t))
+;; (load-theme 'dracula t))
+
+(use-package zenburn-theme
+  :ensure t
+  :config
+  (load-theme 'zenburn t))
 
 ;; (use-package solarized                  ; My colour theme
 ;;   :ensure solarized-theme

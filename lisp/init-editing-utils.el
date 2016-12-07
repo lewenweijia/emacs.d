@@ -1,7 +1,7 @@
 ;; keybindings
-(global-set-key (kbd "C-c C-p") 'wen-switch-to-previous-buffer)
-
+;; (global-set-key (kbd "C-c C-p") 'wen-switch-to-previous-buffer)
 (global-set-key (kbd "C-a") 'wen-back-to-indentation-or-beginning-of-line)
+(global-set-key (kbd "C-c j i") 'wen-find-user-init-file)
 
 
 (defun wen-switch-to-previous-buffer ()
@@ -31,4 +31,10 @@ point reaches the beginning or end of the buffer, stop there."
     (when (= orig-point (point))
       (move-beginning-of-line 1))))
 
+(defun wen-find-user-init-file ()
+  "Edit the `user-init-file', in current window."
+  (interactive)
+  (find-file user-init-file))
+
 (provide 'init-editing-utils)
+

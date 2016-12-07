@@ -3,7 +3,7 @@
   :diminish company-mode
   :config
   (setq company-show-numbers t)
-  (setq company-idle-delay 0.4)
+  (setq company-idle-delay 0.1)
 
   ;; suppress mininbuffer message
   (fset 'company-echo-show 'ignore)
@@ -18,6 +18,7 @@
 
   (define-key company-search-map (kbd "C-n") 'company-select-next)
   (define-key company-search-map (kbd "C-p") 'company-select-previous)
-  (global-company-mode 1))
+
+  (add-hook 'after-init-hook 'global-company-mode))
 
 (provide 'init-company)
