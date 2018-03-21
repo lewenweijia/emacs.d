@@ -1,5 +1,5 @@
 :warning: This repo is *deprecated*. 
-===============================
+---------
 This =emacs.d= is organized well so that you can quickly catch the ideas 
 used inside. Feel free to download it for a learning scratch.
 
@@ -17,5 +17,5 @@ used inside. Feel free to download it for a learning scratch.
     - [[http://elpa.gnu.org/][elpa.gnu.org]]: GNU official packages archive. Packages in this repo table but in a slow update pace.
     - [[http://melpa.org/][melpa.org]] : Community-driven archive. More packages, all is in updated.
 
-==============
+--------------
 Happy Hacking! :yum:
