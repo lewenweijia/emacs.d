@@ -12,7 +12,7 @@ used inside. Feel free to download it for a learning scratch.
 
 *** Usage
     Just open your emacs program, it will take some time to download the
-    third party packages. And then? Emacs Rocks!
+    third party packages.
 
 *** Explore more third party packages?
     - [[http://elpa.gnu.org/][elpa.gnu.org]]: GNU official packages archive. Packages in this repo table but in a slow update pace.
