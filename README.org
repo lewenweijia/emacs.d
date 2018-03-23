@@ -7,7 +7,7 @@ used inside. Feel free to download it for a learning scratch.
 *** Installtaion
 #+BEGIN_SRC sh
   mv ~/.emacs.d ~/.emacs.d.bak
-  git https://github.com/lewenweijia/emacs.d.git ~/.emacs.d
+  git clone https://github.com/lewenweijia/emacs.d.git ~/.emacs.d
 #+END_SRC
 
 *** Usage
